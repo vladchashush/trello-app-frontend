@@ -11,7 +11,7 @@ class PomodoroService {
 	private BASE_URL = '/user/timer'
 
 	async getTodaySession() {
-		const response = await axiosWithAuth.get<IPomodoroRoundResponse>(
+		const response = await axiosWithAuth.get<IPomodoroSessionResponse>(
 			`${this.BASE_URL}/today`
 		)
 		return response

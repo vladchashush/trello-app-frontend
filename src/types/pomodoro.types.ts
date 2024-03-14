@@ -2,7 +2,7 @@ import { IBase } from './root.types'
 
 export interface IPomodoroRoundResponse extends IBase {
 	isCompleted?: boolean
-	totalMinutes: number
+	totalSeconds: number
 }
 
 export interface IPomodoroSessionResponse extends IBase {
